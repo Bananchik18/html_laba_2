@@ -1,0 +1,118 @@
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+
+.first_task{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    background: gray;
+    grid-column-gap: 13px;
+    grid-row-gap: 13px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    width: max-content;
+    padding-right: 40px;
+}
+.first_task_item{
+    background: white;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    margin-bottom: 20px;
+    height: 130px;
+    transition: 0.5s background-color;
+}
+.first_task_item:hover{
+    background: pink;
+}
+.first_task_item:hover i{
+    color: white;
+}
+i{
+    transition: 0.5s background-color;
+    font-size: 90px;
+
+}
+.second_task_item{
+    color: #ff6a00;
+}
+.second_task_item p{
+    padding-left: 25px;
+}
+.second_task_item::before{
+    position: absolute;
+    font-weight: 900;
+
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+}
+.second_task_item:nth-child(1)::before{
+    content: '\f002';
+    font-family: "Font Awesome 5 Pro";
+}
+.second_task_item:nth-child(2)::before{
+    content: '\f27a';
+    font-family: "Font Awesome 5 Pro";
+}
+.second_task_item:nth-child(3)::before{
+    content: '\f004';
+    font-family: "Font Awesome 5 Pro";
+}
+.second_task_item:nth-child(4)::before{
+    content: '\f055';
+    font-family: "Font Awesome 5 Pro";
+}
+.second_task_item:nth-child(5)::before{
+    content: '\f056';
+    font-family: "Font Awesome 5 Pro";
+}
+.second_task_item:nth-child(6)::before{
+    content: '\f057';
+    font-family: "Font Awesome 5 Pro";
+}
+
+.second_task_second{
+    width: 200px;
+    background: #f9f4cb;
+
+    padding: 6px;
+    border-left: 2px solid blue;
+}
+
+
+.second_task_second p:before{
+    content: "«";
+    margin-right: 5px;
+}
+.second_task_second p:after{
+    content: "»";
+    margin-left: 5px;
+}
+
+.third_task{
+    margin-top: 50px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 300px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(1) th {
+    border-bottom: 1px solid;
+}
+tr:nth-child(1) {
+    background-color: #dddddd;
+    border-bottom: 1px solid;
+
+}
+tr td:nth-child(1){
+    border-right: 1px solid;
+    background-color: #b1b1b1;
+}
